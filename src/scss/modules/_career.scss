@@ -1,0 +1,46 @@
+
+@use "../themes" as h2;
+
+.career-section{
+    @apply w-full relative;
+    
+    h2{
+        @include h2.section-heading;
+    }
+
+    .work-history{
+        &-list{
+            @apply w-auto list-none flex flex-col gap-14 ml-6 pl-14 relative;
+        }
+
+        &-progress-bar{
+            @apply w-1 h-full bg-transparent overflow-hidden top-0 left-0 absolute rounded-md;
+        
+            &-color{
+                @apply w-full h-0 top-0 sticky;
+                background: linear-gradient(to top, #914BFF, transparent);
+            }
+        }
+    }
+
+    .expertise{
+        &-area{
+            @apply w-full overflow-hidden;
+    
+            h2{
+                @apply mt-20 mb-0;
+            }
+        }
+
+        &-slider{
+            &-wrapper{
+                @apply w-full relative overflow-hidden mt-10;
+
+                h4{
+                    @apply font-montserrat text-base font-semibold text-white mb-6;
+                }
+            }
+        }
+    }
+
+}

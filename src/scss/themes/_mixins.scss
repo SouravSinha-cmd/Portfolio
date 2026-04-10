@@ -1,0 +1,18 @@
+
+
+// purple color comb gradient
+@mixin gradient-purple-outer {
+    background: linear-gradient(123deg, #914BFF, #18038A);
+}
+
+@mixin gradient-purple-inner {
+    background: linear-gradient(146deg, #000319 50%, #011B35 );
+}
+
+@mixin section-heading {
+        @apply w-auto lg:w-fit font-poppins text-4xl font-semibold text-white flex flex-wrap items-center gap-4 mb-16;
+
+        i{
+            @apply font-normal text-2xl text-Purple-primary p-1.5 px-2.5 rounded-md border border-solid border-Purple-primary;
+        }
+}

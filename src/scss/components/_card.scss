@@ -1,0 +1,46 @@
+
+
+.card{
+    &--exp{
+        @apply w-fit px-8 py-5 rounded-xl border border-dashed border-Purple-primary;
+        
+        &-list{
+            @apply w-full list-none flex flex-wrap items-center justify-start gap-10 lg:justify-center lg:flex-nowrap lg:gap-32;
+    
+            &-item{
+                h3{
+                    @apply font-poppins leading-[56px] text-[56px] font-bold text-Purple-primary;
+                }
+                p{
+                    @apply font-montserrat text-sm text-white leading-[normal] font-normal;
+                }
+            }
+        }
+    }
+
+    &--workHistory-item{
+        @apply block rounded-md p-px relative backdrop-blur-lg bg-white/10
+        before:content-[''] before:w-12 before:h-12 before:block before:-left-20 before:top-0 before:bg-white before:rounded-full before:absolute;
+
+        &-content{
+            @apply w-full p-5 rounded-md;
+            
+        }
+
+        h3{
+            @apply font-poppins text-xl font-semibold text-white flex items-center gap-5; 
+
+            span{
+                @apply font-poppins text-xs font-normal w-auto px-2.5 py-1 rounded-full;
+                background: linear-gradient(123deg, #18038A, #914BFF);
+            }
+        }
+        h4{
+            @apply font-poppins text-sm text-Purple-primary font-semibold mt-2;
+        }
+        P{
+            @apply font-montserrat text-sm text-white pt-4;
+        }
+    }
+
+}

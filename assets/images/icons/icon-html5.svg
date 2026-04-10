@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80">
+	<title>New Project</title>
+	<defs>
+		<image width="96" height="96" id="img1" href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IS0tIFVwbG9hZGVkIHRvOiBTVkcgUmVwbywgd3d3LnN2Z3JlcG8uY29tLCBHZW5lcmF0b3I6IFNWRyBSZXBvIE1peGVyIFRvb2xzIC0tPgo8c3ZnIHdpZHRoPSI4MDBweCIgaGVpZ2h0PSI4MDBweCIgdmlld0JveD0iMCAwIDMyIDMyIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPg0KPHBhdGggZD0iTTYgMjhMNCAzSDI4TDI2IDI4TDE2IDMxTDYgMjhaIiBmaWxsPSIjRTQ0RDI2Ii8+DQo8cGF0aCBkPSJNMjYgNUgxNlYyOS41TDI0IDI3TDI2IDVaIiBmaWxsPSIjRjE2NTI5Ii8+DQo8cGF0aCBkPSJNOS41IDE3LjVMOC41IDhIMjRMMjMuNSAxMUgxMS41TDEyIDE0LjVIMjNMMjIgMjRMMTYgMjZMMTAgMjRMOS41IDE5SDEyLjVMMTMgMjEuNUwxNiAyMi41TDE5IDIxLjVMMTkuNSAxNy41SDkuNVoiIGZpbGw9IndoaXRlIi8+DQo8L3N2Zz4="/>
+	</defs>
+	<style>
+	</style>
+	<use id="html-5-svgrepo-com" href="#img1" transform="matrix(.833,0,0,.833,0,0)"/>
+</svg>

@@ -1,0 +1,21 @@
+
+
+.form{
+    &-group{
+        @apply w-auto h-full relative;
+    }
+}
+
+.label{
+    @apply font-montserrat text-sm text-white w-fit left-4 top-2 -translate-y-2/4 transition-all duration-300 absolute;
+}
+
+.input{
+    @apply w-full min-h-10 font-montserrat text-xs p-2 px-3 rounded-md outline-none bg-white/10 focus:bg-white/70 text-Gray-dark border border-transparent focus:border-Purple-primary;
+
+    &:focus ~ .label,
+    &:active ~ .label{
+        @apply -top-4 text-[0.625rem] text-white leading-[normal];
+    }
+
+}

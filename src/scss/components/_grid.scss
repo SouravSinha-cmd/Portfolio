@@ -1,0 +1,61 @@
+
+
+.grid{
+    @apply w-full gap-8 relative;
+    display: grid;
+
+    &-type{
+        &-col{
+            &--2{
+                @apply grid-cols-1 md:grid-cols-2 lg:grid-cols-2;
+
+                &--full{
+                    @apply col-span-2;
+                }
+            }
+
+            &--4{
+                @apply grid-cols-1 md:grid-cols-2 lg:grid-cols-4;
+            }
+        }
+    }
+
+    &-col{
+        @apply w-full h-full rounded-lg backdrop-blur-lg bg-white/20 overflow-hidden p-3 border border-solid border-white/15 hover:[img:scale-105];
+
+        &:hover img{
+            transform: scale(1.2) !important;
+        }
+
+        &-thumb{
+            @apply w-full h-52 rounded-md overflow-hidden;
+
+            img{
+                @apply w-full h-full object-top object-cover rounded-md;
+            }
+        }
+
+        &-card{
+            @apply w-full h-auto py-5 px-3 space-y-4; 
+
+            h4{
+                @apply font-poppins text-xl font-semibold text-white;
+            }
+
+            p{
+                @apply font-montserrat text-xs text-white font-medium;
+            }
+
+            h5{
+                @apply font-poppins text-sm text-white;
+            }
+
+            a{
+                @apply font-montserrat text-Purple-primary;
+            }
+
+        }
+    }
+
+    
+}

@@ -1,0 +1,33 @@
+
+
+
+*{
+    @apply m-0 p-0 box-border;
+}
+body *{
+    @apply transition-all duration-300;
+}
+body{
+    @apply w-full font-montserrat h-full overflow-x-hidden p-0 m-0 relative box-border
+    after:content-[''] after:block after:w-3/5 after:h-full after:-top-1/4 after:right-0 after:lg:-right-[30%] after:z-[1] after:absolute;
+    font-size: 100%;
+    background: linear-gradient(-165deg, #272829, #242632 10%, #392542 30%, #000319 60%);
+    background-size: 300% 300%;
+    animation: moveGradient 20s infinite linear;
+
+    &::after{
+        background: radial-gradient(#1552ee60, #01093D);
+        filter: blur(200px);
+    }
+}
+
+.main-wrapper{
+    @apply w-full m-0 mx-auto z-10 relative;
+}
+
+.container{
+    @apply w-full max-w-[81rem] px-6 xl:pl-[31rem] xl:pr-[3%] relative mx-auto;
+}
+section{
+    @apply w-full py-20;
+}

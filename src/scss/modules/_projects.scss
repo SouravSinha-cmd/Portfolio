@@ -1,0 +1,19 @@
+
+@use "../themes/" as h2;
+
+.project{
+    &-section{
+        @apply w-full relative;
+
+        h2{
+            @include h2.section-heading;
+        }
+
+        &-pattern{
+            @apply w-full h-full top-0 left-0 right-0 bottom-0 -z-[1] absolute;
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='8' height='8' fill='none' stroke='rgb(255 255 255 / 0.2)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e");
+            -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+            mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+        }
+    }
+}

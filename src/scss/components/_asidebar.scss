@@ -1,0 +1,58 @@
+
+
+@use "../themes" as purple-gred-bg;
+
+.asidebar{
+    @apply w-auto xl:w-full xl:max-w-[25rem] h-auto top-28 bg-white xl:left-[calc(100vw-92vw)] relative xl:fixed p-px rounded-xl mx-5 xl:mx-auto; 
+
+    @include purple-gred-bg.gradient-purple-outer;
+
+    &-content{
+        @apply w-full h-full rounded-xl p-6 flex flex-col gap-9;
+        @include purple-gred-bg.gradient-purple-inner;
+    }
+
+    &-user{
+        @apply w-60 h-60 rounded-full xl:w-full xl:rounded bg-white overflow-hidden mx-auto;
+
+        img{
+            @apply block w-full h-full object-cover bg-center bg-no-repeat;
+        }
+
+        &-name {
+
+            h2{
+                @apply font-poppins text-center text-Purple-primary text-2xl font-semibold;
+            }
+
+            h4{
+                @apply font-montserrat text-center text-white text-xs font-normal;
+            }
+        }
+    }
+    &-card{
+        @apply w-full h-full bg-white/5 rounded-xl p-7;
+    }
+
+    &-social{
+        @apply list-none flex items-center justify-center gap-5 mt-7 transition-transform;
+
+        li{
+            @apply block hover:animate-pulse transition-all duration-300;
+        }
+
+        a{
+            @apply w-full text-base text-white no-underline p-1 relative z-10
+            before:content-[''] before:w-full before:h-px before:opacity-0 before:top-2/4 before:-translate-y-2/4 before:-left-full before:bg-Purple-primary before:transition-all before:duration-300 before:z-[0] before:absolute;
+            
+            &:hover{
+                @apply before:left-0 before:h-full before:opacity-100 before:top-0 before:rounded-md;
+            }
+
+            i{
+                @apply relative z-10;
+            }
+        }
+
+    }
+}

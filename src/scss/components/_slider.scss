@@ -1,0 +1,41 @@
+
+
+.slider{
+
+    &-wrapper{
+        @apply w-full overflow-hidden;
+    }
+
+    &-list{
+        @apply w-[300%] list-none flex items-center gap-8 overflow-hidden cursor-pointer;
+        animation: marquee 20s linear infinite;
+            &:hover{
+                animation-play-state: paused;
+            }
+    }
+    &-item{
+        @apply inline-flex items-center overflow-hidden;
+
+        &.type{
+            &-card{
+                @apply w-auto h-auto;
+    
+                svg{
+                    @apply w-12 h-12;
+                }
+    
+                img{
+                    @apply w-full min-w-full h-12 object-contain bg-center;
+                }
+            }
+
+            &-small{
+                @apply w-auto h-full;
+
+                img{
+                    @apply min-w-14 max-w-14 w-full h-14 block bg-center object-contain p-2 rounded-xl backdrop-blur-lg bg-white/15;
+                }
+            }
+        }
+    }
+}

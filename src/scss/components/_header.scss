@@ -1,0 +1,53 @@
+
+
+.header{
+    @apply w-fit p-px mx-auto rounded-xl fixed top-5 left-2/4 -translate-x-2/4 z-50 transition-all duration-300;
+    transform: translateX(-50%);
+    background: linear-gradient(123deg, #914BFF, #18038A);
+    animation: normalToBottom 1s;
+}
+.header-nav{
+    @apply w-full h-full px-6 py-2.5 bg-Blue-dark rounded-xl;
+}
+.header-menu-list{
+    @apply list-none flex items-center gap-x-8;
+
+    &--item{
+        @apply inline-block;
+
+        &-link{
+            @apply w-full h-full block text-white no-underline;
+
+            svg{
+                @apply w-auto h-10 p-2 stroke-white rounded-md hover:bg-Purple-primary transition-all duration-300;
+
+                path{
+                    @apply stroke-white;
+                }
+            }
+
+            &.active-link{
+                svg{
+                    @apply bg-Purple-primary;
+                }
+            }
+        }
+
+        &:nth-child(2){
+            a svg g path,
+            polygon{
+                @apply fill-white;
+            }
+        }
+        &:nth-child(4){
+            svg{
+                @apply fill-white;
+            }
+        }
+        &:last-child{
+            svg{
+                @apply bg-transparent hover:bg-Purple-primary;
+            }
+        }
+    }
+}

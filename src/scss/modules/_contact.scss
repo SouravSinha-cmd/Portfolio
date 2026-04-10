@@ -1,0 +1,46 @@
+
+@use "../themes" as h2;
+
+.contact-section{
+    @apply w-full h-screen relative;
+
+    h2{
+        @include h2.section-heading;
+        span{
+            @apply block bg-Purple-primary py-1 px-2 rounded-md italic relative;
+            
+        }
+    }
+
+    &-overlay{
+        @apply w-full h-full block top-0 left-0 z-[99] absolute overflow-hidden; 
+        perspective: 500px;
+
+        &.pattern-added{
+            @apply -z-[2];
+        }
+    }
+
+    &-formWrapper{
+        @apply w-full h-full relative overflow-hidden;
+
+        form{
+            @apply w-full h-full outline-none bg-white/20 p-5 py-7 rounded-xl;
+
+            input{
+                @apply outline-none;
+            }
+
+            input:user-valid{
+                @apply border-solid border-green-600;
+            }
+            input:user-invalid{
+                @apply border-solid border-red-600;
+            }
+
+            button{
+                @apply w-full outline-none border-0 cursor-pointer;
+            }
+        }
+    }
+}

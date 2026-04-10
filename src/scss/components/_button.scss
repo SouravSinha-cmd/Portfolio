@@ -1,0 +1,21 @@
+
+
+.btn-wrapper{
+    @apply w-auto flex items-center gap-6 flex-wrap; 
+} 
+.btn{
+    @apply w-fit block font-poppins text-base text-center capitalize font-semibold px-[60px] py-4 rounded-sm !no-underline transition-all duration-300;
+
+    &--primary{
+        @apply bg-Purple-primary text-white;
+    }
+    &--border{
+        @apply relative border border-solid border-transparent bg-transparent text-Purple-primary transition-all duration-300;
+        border-image: linear-gradient(123deg, #914BFF, #18038A) 1;
+
+        &:hover{
+            @apply text-white;
+            background: linear-gradient(123deg, #914BFF, #18038A);
+        }
+    }
+}
