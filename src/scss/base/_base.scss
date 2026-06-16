@@ -26,7 +26,7 @@ body{
 }
 
 .container{
-    @apply w-full max-w-[81rem] px-6 xl:pl-[31rem] xl:pr-[3%] relative mx-auto;
+    @apply w-full max-w-[81rem] px-6 xl:max-w-[calc(100%-40%)] xl:pr-[3%] relative mx-auto xl:mr-0 xl:ml-auto overflow-hidden;
 }
 section{
     @apply w-full py-20;
