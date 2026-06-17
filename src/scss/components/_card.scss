@@ -18,29 +18,37 @@
         }
     }
 
-    &--workHistory-item{
-        @apply block rounded-md p-px relative backdrop-blur-lg bg-white/10
-        before:content-[''] before:w-12 before:h-12 before:block before:-left-20 before:top-0 before:bg-white before:rounded-full before:absolute;
+    &--workHistory-item {
+      @apply block rounded-md p-px relative backdrop-blur-lg bg-white/5 border border-solid border-Purple-primary border-opacity-50
+      before:content-[''] before:w-8 before:h-8 before:block before:-left-[4.5rem] before:top-0 before:bg-white before:rounded-full before:absolute;
 
-        &-content{
-            @apply w-full p-5 rounded-md;
-            
-        }
+      &-content{
+          @apply w-full p-5 rounded-md;
+          
+      }
 
-        h3{
-            @apply font-poppins text-xl font-semibold text-white flex items-center gap-5; 
+      h3{
+          @apply font-poppins text-xl font-semibold text-white flex items-center gap-5; 
 
-            span{
-                @apply font-poppins text-xs font-normal w-auto px-2.5 py-1 rounded-full;
-                background: linear-gradient(123deg, #18038A, #914BFF);
-            }
+          span{
+              @apply font-poppins text-xs font-normal w-auto px-2.5 py-1 rounded-full;
+              background: linear-gradient(123deg, #18038A, #914BFF);
+          }
+      }
+      h4{
+          @apply font-poppins text-sm text-Purple-primary font-semibold mt-2;
+      }
+      P{
+          @apply font-montserrat text-sm text-white pt-4;
+      }
+
+      &-list {
+        @apply list-[disclosure-closed] space-y-3 pl-6 mt-4;
+        
+        li {
+          @apply text-white text-sm;
         }
-        h4{
-            @apply font-poppins text-sm text-Purple-primary font-semibold mt-2;
-        }
-        P{
-            @apply font-montserrat text-sm text-white pt-4;
-        }
+      }
     }
 
 }

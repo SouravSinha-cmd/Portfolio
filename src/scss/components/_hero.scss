@@ -1,27 +1,51 @@
 
 
-.hero{
-    @apply w-full pt-0 pb-16 h-auto flex items-center relative overflow-hidden
-    before:content-[''] before:block before:w-full before:h-full before:top-0 before:-right-0 before:-z-[1] before:absolute;
+.hero {
+  @apply w-full pt-0 pb-16 h-auto flex items-center relative overflow-hidden
+  before:content-[''] before:block before:w-full before:h-full before:top-0 before:-right-0 before:-z-[1] before:absolute;
 
     &::before{
-        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='16' height='16' fill='none'%3e%3ccircle fill='rgb(255 255 255 / 0.2)' id='pattern-circle' cx='10' cy='10' r='1.6257413380501518'%3e%3c/circle%3e%3c/svg%3e");
-        filter: opacity(.5);
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='16' height='16' fill='none'%3e%3ccircle fill='rgb(255 255 255 / 0.2)' id='pattern-circle' cx='10' cy='10' r='1.6257413380501518'%3e%3c/circle%3e%3c/svg%3e");
+      filter: opacity(.5);
     }
     & > .container{
-        @apply pt-40;
+      @apply pt-40;
     }
 
     h1{
-        @apply font-poppins text-5xl lg:text-[3.5rem] leading-normal lg:leading-[70px] font-semibold text-transparent !bg-clip-text;
-        background: linear-gradient(136deg, #8c43ff, #ffffff);
-        background-size: 300% 300%;
-        animation: moveGradient 20s infinite linear;
-        animation-duration: 20s !important;
+      @apply font-poppins text-5xl lg:text-[3.5rem] leading-normal lg:leading-[4.0625rem] font-semibold text-transparent !bg-clip-text;
+      background: linear-gradient(136deg, #8c43ff, #ffffff);
+      background-size: 300% 300%;
+      animation: moveGradient 20s infinite linear;
+      animation-duration: 20s !important;
     }
 
-    & .container > p{
-        @apply font-montserrat text-base font-normal text-white mt-2;
+    & .container p:not(.hero_info) {
+      @apply font-montserrat text-sm font-normal text-white mt-2;
+    }
+
+    &__contact_info-list {
+      @apply flex items-start gap-3 list-none mt-7 flex-wrap;
+
+      li {
+        @apply w-full no-underline text-white font-medium; 
+
+        a {
+          @apply no-underline text-white font-medium flex items-center gap-2 transition-all duration-300 relative hover:text-Purple-primary;
+
+          i {
+            @apply bg-white p-1.5 rounded-s-lg text-Purple-primary hover:bg-Purple-primary hover:text-white transition-all duration-300;
+          }
+
+          &:hover i {
+            
+          }
+        }
+      }
+    }
+
+    &_info {
+      @apply font-medium text-white mt-8 leading-[1.625rem];
     }
 
     .exp-card{

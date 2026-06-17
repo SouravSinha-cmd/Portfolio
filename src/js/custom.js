@@ -28,7 +28,7 @@ window.addEventListener('scroll', () => {
   
   const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
 
-  const height = (scrollPosition / maxScroll) * (90 * 4) ; // Use scroll percentage
+  const height = (scrollPosition / maxScroll) * (90 * 5) ;
   
   lineInner.style.height = `${height}vh`;
 });
