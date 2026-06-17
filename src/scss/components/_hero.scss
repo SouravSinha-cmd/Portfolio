@@ -36,6 +36,10 @@
           i {
             @apply bg-white p-1.5 rounded-s-lg text-Purple-primary hover:bg-Purple-primary hover:text-white transition-all duration-300;
           }
+
+          &:hover i {
+            
+          }
         }
       }
     }
